@@ -1,0 +1,180 @@
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+
+/* Global Styles */
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', Helvetica, serif;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 20px 0 25px 0;
+}
+
+/* Main Profile */
+
+#profile {
+  margin-top: 20px;
+}
+
+#profile-photo {
+  text-align: center;
+}
+
+#profile-photo img {
+  border-radius: 25%
+}
+
+#border{ 
+  border: 5px solid #733951;
+  height: 215px;
+  width: 215px;
+  border-radius: 10%;
+  margin: 0 auto;
+  padding: 15px;
+  
+}
+
+#description {
+  text-align: justify;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h2 {
+  color: #444;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+p {
+  color:  #333;
+  margin: 25px 0 10px 0;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  padding: 0 35px;
+}
+
+p:first-of-type {
+  border-top: 5px solid #733951;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+p:last-of-type {
+  border-bottom: 5px solid #733951;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 5px solid #733951;
+  color: #733951;
+  text-align: center;
+  height: 5px;
+  margin-top: 30px;
+}
+
+#icons {
+  text-align: center;
+}
+
+#icons > img {
+  display: inline-block;
+  margin: 25px 16px 0 16px;
+  width: 75px;
+  height: 75px;
+}
+
+/* Links */
+
+#links {
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+}
+
+#links a {
+  color: #733951;
+  display: inline-block;
+  margin: 0 24px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#links a:hover {
+  color: #333;
+  transition: 250ms ease-in;
+}
