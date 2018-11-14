@@ -83,10 +83,10 @@ body {
   border: 5px solid #733951;
   height: 215px;
   width: 215px;
-  border-radius: 10%;
+  border-radius: 20%;
   margin: 0 auto;
   padding: 15px;
-  
+  animation: bRadius 2s;
 }
 
 #description {
@@ -177,4 +177,20 @@ hr {
 #links a:hover {
   color: #333;
   transition: 250ms ease-in;
+}
+
+/* Animations */
+
+#profile-photo, #icons, #links, span, h1, h2 {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bRadius {
+  from { border-radius: 0; }
+  to { border-radius: 20%; }
 }
