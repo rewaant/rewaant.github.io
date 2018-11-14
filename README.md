@@ -1,7 +1,7 @@
 # rewaant.github.io
 Rewaant Chhabra - Web Developer/Web Engineer | LAMP | PHP | Full Stack | Wordpress
 
-This is my personal portfolio website repository.
+This is my personal website repository.
 
 I simply offer to build Web Applications or Websites for Businesses. Primarily experienced with building end to end applications on the LAMP stack.
 

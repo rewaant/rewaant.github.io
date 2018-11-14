@@ -5,48 +5,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Custom CSS */
@@ -60,7 +147,8 @@ body {
 }
 
 #container {
-  width: 1170px;
+  width: 100vw;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 20px 0 25px 0;
 }
@@ -76,10 +164,10 @@ body {
 }
 
 #profile-photo img {
-  border-radius: 25%
+  border-radius: 25%;
 }
 
-#border{ 
+#border {
   border: 5px solid #733951;
   height: 215px;
   width: 215px;
@@ -91,7 +179,8 @@ body {
 
 #description {
   text-align: justify;
-  width: 960px;
+  width: 100vw;
+  max-width: 960px;
   margin: 0 auto;
   margin-top: 25px;
 }
@@ -114,7 +203,7 @@ h2 {
 }
 
 p {
-  color:  #333;
+  color: #333;
   margin: 25px 0 10px 0;
   letter-spacing: 1px;
   line-height: 1.5em;
@@ -150,7 +239,7 @@ hr {
   text-align: center;
 }
 
-#icons > img {
+#icons>img {
   display: inline-block;
   margin: 25px 16px 0 16px;
   width: 75px;
@@ -162,7 +251,8 @@ hr {
 #links {
   margin: 0 auto;
   text-align: center;
-  width: 960px;
+  width: 100vw;
+  max-width: 960px;
 }
 
 #links a {
@@ -181,16 +271,120 @@ hr {
 
 /* Animations */
 
-#profile-photo, #icons, #links, span, h1, h2 {
+#profile-photo,
+#icons,
+#links,
+span,
+h1,
+h2 {
   animation: fadein 2s;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes bRadius {
-  from { border-radius: 0; }
-  to { border-radius: 20%; }
+  from {
+    border-radius: 0;
+  }
+
+  to {
+    border-radius: 20%;
+  }
+}
+
+/* Responsive Design */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  #profile-photo img,
+  #border {
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 0 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #icons>img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  #links a {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10vw;
+    font-size: 16px;
+  }
+
+  #links i {
+    padding-right: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  #profile-photo img,
+  #border {
+    display: block;
+    width: 175px;
+    height: 175px;
+  }
+
+  h1 {
+    font-size: 2em;
+
+  }
+
+  h2 {
+    margin-top: 15px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding: 0 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #icons>img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  #links a {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10vw;
+    font-size: 16px;
+  }
+
+  #links i {
+    padding-right: 10px;
+  }
 }
