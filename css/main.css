@@ -174,7 +174,6 @@ body {
   border-radius: 20%;
   margin: 0 auto;
   padding: 15px;
-  animation: bRadius 2s;
 }
 
 #description {
@@ -235,17 +234,6 @@ hr {
   margin-top: 30px;
 }
 
-#icons {
-  text-align: center;
-}
-
-#icons>img {
-  display: inline-block;
-  margin: 25px 16px 0 16px;
-  width: 75px;
-  height: 75px;
-}
-
 /* Links */
 
 #links {
@@ -277,7 +265,19 @@ hr {
 span,
 h1,
 h2 {
-  animation: fadein 2s;
+  animation: fadein 3s;
+}
+
+#border {
+  animation: bRadius 3s ease-in-out;
+}
+
+#avatar {
+  animation: fadeInDown 1s;
+}
+
+#description {
+  animation: fadeInUp 1s;
 }
 
 @keyframes fadein {
@@ -297,6 +297,30 @@ h2 {
 
   to {
     border-radius: 20%;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
