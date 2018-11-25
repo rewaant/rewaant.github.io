@@ -146,6 +146,28 @@ body {
   box-sizing: border-box;
 }
 
+#sample-work-link {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+#sample-work-link a {
+  color: #733951;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #733951;
+}
+
+#sample-work-link a:hover {
+  color: #ffffff;
+  background: #733951;
+  transition: 0.3s linear;
+}
+
 #container {
   width: 100vw;
   max-width: 1170px;
@@ -209,16 +231,90 @@ p {
   padding: 0 35px;
 }
 
-p:first-of-type {
+#body {
   border-top: 5px solid #733951;
-  margin-top: 25px;
+  border-bottom: 5px solid #733951;
   padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-p:last-of-type {
-  border-bottom: 5px solid #733951;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
+#body h3 {
+  color: #733951;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.work {
+  display: flex;
+  justify-content: space-around;
+}
+
+.columns {
+  position: relative;
+  width: 50%;
+  border: 3px solid #733951;
+  margin: 0 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+}
+
+.columns:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: #733951;
+  font-size: 1em;
+  line-height: 1.2em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+.link-work {
+  font-size: 1em;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
+  text-align: center;
+}
+
+.link-work a {
+  color: #733951;
+  text-decoration: none;
+  border: 1px solid #733951;
+  border-radius: 10%;
+  padding: 5px 15px;
 }
 
 #bold {
