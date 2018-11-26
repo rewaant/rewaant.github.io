@@ -425,6 +425,14 @@ h2 {
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
+  #avatar {
+    margin-top: 65px;
+  }
+
+  #sample-work-link a {
+    font-size: 1em;
+  }
+
   #profile-photo img,
   #border {
     display: block;
@@ -447,10 +455,14 @@ h2 {
     font-size: 14px;
   }
 
-  #icons>img {
-    width: 15vw;
-    height: 15vw;
-    padding-right: 8px;
+  .work {
+    flex-direction: column;
+  }
+
+  .columns {
+    width: 90%;
+    display: block;
+    margin: 20px auto;
   }
 
   #links a {
@@ -476,6 +488,14 @@ h2 {
     height: 175px;
   }
 
+  #avatar {
+    margin-top: 65px;
+  }
+
+  #sample-work-link a {
+    font-size: 0.8em;
+  }
+
   h1 {
     font-size: 2em;
 
@@ -492,10 +512,14 @@ h2 {
     font-size: 14px;
   }
 
-  #icons>img {
-    width: 15vw;
-    height: 15vw;
-    padding-right: 12px;
+  .work {
+    flex-direction: column;
+  }
+
+  .columns {
+    width: 90%;
+    display: block;
+    margin: 20px auto;
   }
 
   #links a {
