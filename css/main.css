@@ -360,7 +360,8 @@ hr {
 #links,
 span,
 h1,
-h2 {
+h2,
+.work {
   animation: fadein 3s;
 }
 
